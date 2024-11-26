@@ -1,6 +1,5 @@
-// src/external-api/external-api.module.ts
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-import { HttpModule } from '@nestjs/axios'; // Importar HttpModule
+import { HttpModule } from '@nestjs/axios'; 
 import { ImdbController } from './imdb.controller';
 import { ImdbService } from './imdb.service';
 import { AuthMiddleware } from 'src/auth/auth.middleware';

@@ -7,10 +7,10 @@ async function bootstrap(): Promise<void> {
   app.useGlobalPipes(new ValidationPipe());
   const PORT = 4000
   app.enableCors({
-    origin: '*', // Permite todas las fuentes. Cambiar según sea necesario.
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos HTTP permitidos
-    allowedHeaders: 'Content-Type, Authorization', // Cabeceras permitidas
-    credentials: true, // Si necesitas enviar cookies o credenciales
+    origin: '*', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', 
+    allowedHeaders: 'Content-Type, Authorization', 
+    credentials: true, 
   });
   await app.listen(PORT);
 }
